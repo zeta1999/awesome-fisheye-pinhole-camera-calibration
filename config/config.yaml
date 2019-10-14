@@ -1,0 +1,84 @@
+%YAML:1.0
+---
+
+#left calib image saved path(str)
+local_imagePathL: "../data/test_data/20190903_UseGuess02/L/imagePath.txt"
+
+#right calib image saved path(str)
+local_imagePathR: "../data/test_data/20190903_UseGuess02/R/imagePath.txt"
+
+#serial_num_L(str)
+serial_numL: "123456L"
+
+#serial_num_R(str)
+serial_numR: "123456R"
+
+#stereo_calib_path(str)
+resultPath: "../stereo_calib_results.yaml"
+
+# 0:yuv /1:png/jpg
+imageType: 1
+
+image_size:
+  -
+    width: 752
+    height: 480
+
+#caliboard size
+board_size:
+    -
+      width: 4
+      height: 11
+
+#  mm
+#square_size: 18.0
+#square_size: 36.0
+square_size: 42.0
+
+#  ResultStorage : 1   /   NOT_ResultStorage : 0
+resultStorage: 1
+
+cam_matrix_L: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [ 3.6605340439727684e+02, 0., 3.8880545714475403e+02, 0.,
+          3.6614293821575342e+02, 2.2970318138125370e+02, 0., 0., 1. ]
+
+cam_distortion_L: !!opencv-matrix
+  rows: 4
+  cols: 1
+  dt: d
+  data: [ -2.4387893646601624e-02, 5.9618192152208916e-03,
+          -1.1177157639323169e-02, 3.5995551933616214e-03 ]
+
+cam_matrix_R: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [ 3.6588732564170311e+02, 0., 3.8199544626644399e+02, 0.,
+          3.6593550703353532e+02, 2.4625965187143674e+02, 0., 0., 1. ]
+
+cam_distortion_R: !!opencv-matrix
+  rows: 4
+  cols: 1
+  dt: d
+  data: [ -2.1399318131873655e-02, -4.4370359976941718e-03,
+          -1.0889731948937063e-04, -3.9400566846670365e-04 ]
+    
+system_rotation: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [ 9.9997346538498399e-01, 4.5526652033247338e-03,
+          -5.6869821076299606e-03, -4.5737982859423666e-03,
+          9.9998266323913698e-01, -3.7085833416907730e-03,
+          5.6699995754477643e-03, 3.7344960448756387e-03,
+          9.9997695205644876e-01 ]
+
+system_translation: !!opencv-matrix
+  rows: 3
+  cols: 1
+  dt: d
+  data: [ -1.2030252514122655e+02, 4.2350907393087243e-02,
+          -2.1771375057183278e+00 ]
