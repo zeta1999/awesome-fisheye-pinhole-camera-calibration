@@ -1,3 +1,6 @@
+//author email: vision3d@yeah.net
+//感谢微信公众号：3D视觉工坊 及 计算机视觉工坊
+
 #include "calibCoreAlgorithm.h"
 
 #include <math.h>
