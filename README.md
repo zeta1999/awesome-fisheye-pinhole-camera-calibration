@@ -9,10 +9,10 @@
 
 图片文件夹下，存放一个imagePath.txt，里面为每张图片的路径：例如
 
-../data/test_data/20190903/L/ 3.png
-../data/test_data/20190903/L/ 4.png
-../data/test_data/20190903/L/ 5.png
-../data/test_data/20190903/L/ 6.png
+1. ../data/test_data/20190903/L/ 3.png
+2. ../data/test_data/20190903/L/ 4.png
+3. ../data/test_data/20190903/L/ 5.png
+4. ../data/test_data/20190903/L/ 6.png
 
 鱼眼模型的解读：[一分钟详解鱼眼镜头标定基本原理及实现](https://mp.weixin.qq.com/s/VyxoTaYtYPB-Bfh3JCXl1A)                
 
